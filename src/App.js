@@ -9,7 +9,6 @@ function App() {
     <div className="App">
     <Header />
     <Sidebar />
-      <h1>What up yo</h1>
       
     </div>
   );

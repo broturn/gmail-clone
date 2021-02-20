@@ -57,10 +57,10 @@ function Mail() {
                     <h2>Subject</h2>
                     <LabelImportant className="mail__important" />
                     <p>Title</p>
-                    <p>10pm</p>
+                    <p className="mail__time">10pm</p>
                 </div>
                 <div className="mail__message">
-                    This is a message!!!
+                    <p>This is a message!!!</p>
                 </div>
             </div>
         </div>

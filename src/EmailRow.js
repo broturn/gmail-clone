@@ -4,7 +4,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
 import "./EmailRow.css";
-import { selectedMail } from "./features/mailSlice";
+import { selectMail } from "./features/mailSlice";
 
 function EmailRow({ id, title, subject, description, time }) {
   const history = useHistory();
@@ -12,7 +12,7 @@ function EmailRow({ id, title, subject, description, time }) {
 
   const openMail = () => {
     dispatch(
-      selectedMail({
+      selectMail({
         id,
         title,
         subject,

@@ -9,6 +9,7 @@ import SendMail from './SendMail';
 import { selectSendMessageIsOpen } from './features/mailSlice';
 import { useSelector } from 'react-redux';
 import { selectUser } from './features/userSlice';
+import Login from './Login';
 
 function App() {
   const sendMessageIsOpen = useSelector(selectSendMessageIsOpen)

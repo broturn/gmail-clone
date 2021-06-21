@@ -4,8 +4,17 @@ import "./Header.css";
 import { Avatar, IconButton } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
 import { Apps, ArrowDropDown, Notifications } from '@material-ui/icons';
+import { useSelector } from 'react-redux';
+import { selectUser } from './features/userSlice';
+
 
 function Header() {
+    const user = useSelector(selectUser);
+
+    const signOut = () => {
+
+    }
+
     return (
         <div className="header">
             <div className="header__left">
@@ -26,7 +35,7 @@ function Header() {
                 <IconButton>
                <Notifications />
                 </IconButton>
-                <Avatar />
+                <Avatar onClick={signOut}  src={user?.photoUrl} />
             </div>
         </div>
     )

@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid whitesmoke;
+    cursor: pointer;
 }
 .header__left {
     display: flex;
@@ -12,6 +13,7 @@
     object-fit: contain;
     height: 80px;
     margin-left: 5px;
+    
 }
 
 .header__middle {
